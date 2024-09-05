@@ -8,6 +8,8 @@ public class Main {
 
             if (d.equals(d2))
                 System.out.println("Data 1: "+d+", igual a data 2: "+d2);
+            else
+                System.out.println("Data 1: "+d+", não é igual a data 2: "+d2);
 
             System.out.println("Data formatada com override do toString(): "+d.toString());
             d.setDia((byte)28);
