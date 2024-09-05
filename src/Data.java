@@ -162,4 +162,14 @@ public class Data {
 
     }
 
+    public boolean equals (Data dat){
+        if (this==dat) return true;
+        if (dat == null) return false;
+        if (this.dia!=dat.dia) return false;
+        if (this.mes!=dat.mes) return false;
+        if (this.ano!=dat.ano) return false;
+
+        return true;
+    }
+
 }

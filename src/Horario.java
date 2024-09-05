@@ -78,4 +78,14 @@ public class Horario {
                 (this.segundo<10?"0":"")+this.segundo;
 
     }
+
+    public boolean equals (Horario hor){
+        if (this==hor) return true;
+        if (hor == null) return false;
+        if (this.hora!=hor.hora) return false;
+        if (this.minuto!=hor.minuto) return false;
+        if (this.segundo!=hor.segundo) return false;
+
+        return true;
+    }
 }

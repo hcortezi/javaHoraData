@@ -4,6 +4,10 @@ public class Main {
         try
         {
             Data d = new Data((byte)28, (byte)2, (short)2023);
+            Data d2 = new Data((byte)28, (byte)2, (short)2023);
+
+            if (d.equals(d2))
+                System.out.println("Data 1 igual a data 2");
 
             System.out.println("Data formatada com override do toString(): "+d.toString());
             d.setDia((byte)28);
@@ -25,9 +29,20 @@ public class Main {
 
             Horario h1 = new Horario((byte)2, (byte)30, (byte)0);
             Horario h2 = new Horario((byte)14,(byte)45, (byte)30);
+            Horario h3 = new Horario((byte)2, (byte)30, (byte)0);
 
             System.err.println("Primeiro horário: "+h1);
             System.err.println("Segundo horário: "+h2);
+
+            if (h1.equals(h2))
+                System.out.println(h1+" é igual a "+h2);
+            else
+                System.out.println(h1+" não é igual a "+h2);
+
+            if (h1.equals(h3))
+                System.out.println(h1+" é igual a "+h3);
+            else
+                System.out.println(h1+" não é igual a "+h3);
             
             System.out.printf("Horário 1: %02d:%02d:%02d\n", h1.getHora(), h1.getMinuto(), h1.getSegundo());
             System.out.printf("Horário 2: %02d:%02d:%02d\n", h2.getHora(), h2.getMinuto(), h2.getSegundo());
