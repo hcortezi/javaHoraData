@@ -7,7 +7,7 @@ public class Main {
             Data d2 = new Data((byte)28, (byte)2, (short)2023);
 
             if (d.equals(d2))
-                System.out.println("Data 1 igual a data 2");
+                System.out.println("Data 1: "+d+", igual a data 2: "+d2);
 
             System.out.println("Data formatada com override do toString(): "+d.toString());
             d.setDia((byte)28);

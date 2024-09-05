@@ -79,9 +79,14 @@ public class Horario {
 
     }
 
-    public boolean equals (Horario hor){
-        if (this==hor) return true;
-        if (hor == null) return false;
+    @Override
+    public boolean equals (Object obj){
+        if (this==obj) return true;
+        if (obj == null) return false;
+        if (this.getClass() != obj.getClass()) return false;
+
+        Horario hor = (Horario)obj;
+
         if (this.hora!=hor.hora) return false;
         if (this.minuto!=hor.minuto) return false;
         if (this.segundo!=hor.segundo) return false;

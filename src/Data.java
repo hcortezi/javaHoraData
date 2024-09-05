@@ -162,9 +162,13 @@ public class Data {
 
     }
 
-    public boolean equals (Data dat){
-        if (this==dat) return true;
-        if (dat == null) return false;
+    @Override
+    public boolean equals (Object obj){
+        if (this==obj) return true;
+        if (obj == null) return false;
+
+        if (this.getClass() != obj.getClass()) return false;
+        Data dat = (Data)obj;
         if (this.dia!=dat.dia) return false;
         if (this.mes!=dat.mes) return false;
         if (this.ano!=dat.ano) return false;
