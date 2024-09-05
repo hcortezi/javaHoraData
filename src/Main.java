@@ -23,8 +23,11 @@ public class Main {
             System.out.printf("Hoje é %d/%d/%d\n", d.getDia(), d.getMes(), d.getAno());
             System.out.println("Data formata com override do toString(): "+d);
 
-            Horario h1 = new Horario((byte)10, (byte)30, (byte)0);
+            Horario h1 = new Horario((byte)2, (byte)30, (byte)0);
             Horario h2 = new Horario((byte)14,(byte)45, (byte)30);
+
+            System.err.println("Primeiro horário: "+h1);
+            System.err.println("Segundo horário: "+h2);
             
             System.out.printf("Horário 1: %02d:%02d:%02d\n", h1.getHora(), h1.getMinuto(), h1.getSegundo());
             System.out.printf("Horário 2: %02d:%02d:%02d\n", h2.getHora(), h2.getMinuto(), h2.getSegundo());
