@@ -134,8 +134,7 @@ public class Data {
 
     public void setAno (short ano) throws Exception
     {
-        if (ano<=0)
-        throw new Exception ("Ano invalido");
+        if (ano<=0) throw new Exception ("Ano invalido");
 
         this.ano=ano;
     }

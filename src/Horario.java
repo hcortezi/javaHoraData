@@ -2,8 +2,7 @@ public class Horario {
     private byte segundo, minuto, hora;
 
     public void setSegundo(byte segundo) throws Exception{
-        if (segundo < 0 || segundo > 59)
-        throw new Exception("Segundo inválido");
+        if (segundo < 0 || segundo > 59) throw new Exception("Segundo inválido");
         this.segundo=segundo;
     }
 
@@ -12,8 +11,7 @@ public class Horario {
     }
 
     public void setMinuto(byte minuto) throws Exception{
-        if (minuto < 0 || minuto > 59)
-        throw new Exception("Minuto inválido");
+        if (minuto < 0 || minuto > 59) throw new Exception("Minuto inválido");
         this.minuto=minuto;
     }
 
@@ -22,8 +20,7 @@ public class Horario {
     }
 
     public void setHora(byte hora) throws Exception{
-        if (hora < 0 || hora > 23)
-        throw new Exception("Hora inválida");
+        if (hora < 0 || hora > 23) throw new Exception("Hora inválida");
         this.hora=hora;
     }
 
